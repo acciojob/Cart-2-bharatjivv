@@ -1,2 +1,16 @@
-<p>Now I can render any React component on any DOM node I want using ReactDOM.render</p>
+import React from 'react';
+import Navbar from "./Navbar";
+import CartList from "./CartList";
+import { CartProvider } from '../context/CartContext';
 
+const App = () => {
+  return (
+    <CartProvider>
+      <main id="main">
+        <Navbar />
+        <CartList />
+      </main>
+    </CartProvider>
+  );
+};
+export default App;
