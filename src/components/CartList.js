@@ -16,7 +16,7 @@ const CartList = () => {
       {cart.map(item => (
         <CartItem key={item.id} {...item} />
       ))}
-      <h3 id="cart-total-amount">Total: ₹{parseFloat(total.toFixed(2))}</h3>
+      <h3 id="cart-total-amount">$ {parseFloat(total.toFixed(2))}</h3>
       <button id="clear-all-cart" onClick={() => dispatch({ type: 'CLEAR' })}>
         Clear Cart
       </button>
