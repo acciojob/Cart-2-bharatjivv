@@ -1,12 +1,12 @@
 import React from 'react';
 import { useCart } from '../context/CartContext';
 
-const CartItem = ({ id, name, price, amount }) => {
+const CartItem = ({ id, title, price, amount }) => {
   const { dispatch } = useCart();
 
   return (
     <div>
-      <h4>{name}</h4>
+      <h4>{title}</h4>
       <p id={`cart-item-price-${id}`}>₹{price}</p>
       <div>
         <button id={`decrement-btn-${id}`} onClick={() => dispatch({ type: 'DECREMENT', payload: id })}>-</button>

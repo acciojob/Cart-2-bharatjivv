@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <h2>My Cart</h2>
+      <h2>useReducer</h2>
       <div>
         🛒 <span id="nav-cart-item-count">{totalItems}</span>
       </div>
